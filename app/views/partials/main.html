@@ -1,0 +1,70 @@
+<div ng-include="'partials/navbar'"></div>
+
+<div class="text-center">
+  <h1>NYC Restaurant Browser</h1>
+</div>
+
+<div class="row text-center">
+  <p id="results-count" ng-if="data.pagedResults().length !== 0">Showing {{data.currentPage*static.pageSize+1}}-{{(data.currentPage*static.pageSize+1)+data.pagedResults().length-1}} of {{data.groupedResults().length}} results</p>
+  <p id="no-results" ng-if="data.pagedResults().length === 0">Found no results for specified criteria.</p>
+  <ul class="pagination" ng-if="data.pagedResults().length !== 0">
+      <li><a ng-click="prevPage()" href="#">&laquo;</a></li>
+      <li ng-repeat="page in data.pages()" ng-class="{active: $index==(data.currentPage)}">
+        <a ng-click="jumpToPage(page)" href="#">{{page}}</a>
+      </li>
+      <li><a ng-click="nextPage()" href="#">&raquo;</a></li>
+  </ul>
+</div>
+
+<form id="filter-form" class="form-horizontal" role="form">
+  <div class='form-group'>
+    <label for='boroughSelector' class="col-sm-3 control-label">Borough</label>
+    <div class="col-sm-9">
+    <select class="form-control"
+            multiple
+            chosen
+            allow-single-deselect="true"
+            name="boroughSelector"
+            data-placeholder="Borough"
+            data-ng-model="filterControls.boroughSelector"
+            ng-options="b as (b | upcase) for b in static.boroughs">
+      <option value=""></option>
+    </select>
+    </div>
+  </div>
+
+  <div class='form-group'>
+    <label for='categorySelector' class="col-sm-3 control-label">Category</label>
+    <div class="col-sm-9">
+    <select class="form-control"
+            multiple
+            chosen
+            allow-single-deselect="true"
+            name="categorySelector"
+            data-placeholder="Category"
+            data-ng-model="filterControls.categorySelector"
+            ng-options="c as c | upcase for c in static.categories">
+      <option value=""></option>
+    </select>
+    </div>
+  </div>
+
+  <div class='form-group'>
+    <label for='nameSelector' class="col-sm-3 control-label">Name</label>
+    <div class='col-sm-9'>
+    <input class="form-control" data-ng-model="filterControls.nameSelector" name='nameSelector' type='text' placeholder='Name' />
+    </div>
+  </div>
+</form>
+
+<div class="venue-wrap">
+  <div ng-repeat="venue in data.pagedResults()" class="venue-box">
+    <div class="venue">
+      <img ng-src={{venue.primaryPhoto}} />
+      <div class='img-caption'>
+        <a class='img-caption-link' ng-click="changeView('detail/', venue)">{{venue.name}}</a>
+        <div class='img-caption-details'>{{venue.location.city | upcase}} - {{venue.categories[0].shortName}}</div>
+      </div>
+    </div>
+  </div>
+</div>

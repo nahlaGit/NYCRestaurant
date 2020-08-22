@@ -1,0 +1,148 @@
+{
+    "id": "4decca141f6e3ddebe06c5ef",
+    "name": "Smith Canteen",
+    "contact": {
+        "phone": "3472940292",
+        "formattedPhone": "(347) 294-0292",
+        "twitter": "smithcanteen"
+    },
+    "location": {
+        "address": "343 Smith St",
+        "crossStreet": "btwn Carroll & President",
+        "lat": 40.680326,
+        "lng": -73.994951,
+        "postalCode": "11231",
+        "cc": "US",
+        "city": "Brooklyn",
+        "state": "NY",
+        "country": "United States"
+    },
+    "categories": [
+        {
+            "id": "4bf58dd8d48988d16d941735",
+            "name": "Café",
+            "pluralName": "Cafés",
+            "shortName": "Café",
+            "icon": {
+                "prefix": "https://ss1.4sqi.net/img/categories_v2/food/cafe_",
+                "suffix": ".png"
+            },
+            "primary": true
+        }
+    ],
+    "verified": true,
+    "restricted": true,
+    "stats": {
+        "checkinsCount": 8035,
+        "usersCount": 1581,
+        "tipCount": 70
+    },
+    "url": "http://www.smithcanteen.com",
+    "price": {
+        "tier": 2,
+        "message": "Moderate",
+        "currency": "$"
+    },
+    "likes": {
+        "count": 62,
+        "groups": [
+            {
+                "type": "others",
+                "count": 62,
+                "items": []
+            }
+        ],
+        "summary": "62 likes"
+    },
+    "rating": 9.29,
+    "hours": {
+        "status": "Closed until 7:00am tomorrow",
+        "isOpen": false
+    },
+    "specials": {
+        "count": 1,
+        "items": [
+            {
+                "id": "52e884ae11d2998a870027bd",
+                "type": "frequency",
+                "message": "Each Monday, our Mayor gets the coffee drink and baked good of his or her choice. Offer limited to one person per Monday.",
+                "photo": {
+                    "id": "52e884ad498e34e959d2070e",
+                    "createdAt": 1390970029,
+                    "prefix": "https://irs1.4sqi.net/img/general/",
+                    "suffix": "/41626544_L3bG-rYAqFP6klYfdxTSHIj0q3bzYsYZkvUFW-kHZNQ.jpg",
+                    "width": 667,
+                    "height": 699
+                },
+                "description": "Unlocked every check-in",
+                "icon": "check-in",
+                "title": "Check-in Special",
+                "provider": "foursquare",
+                "redemption": "standard",
+                "page": {
+                    "id": "41626544",
+                    "firstName": "Smith Canteen",
+                    "gender": "none",
+                    "photo": {
+                        "prefix": "https://irs2.4sqi.net/img/user/",
+                        "suffix": "/41626544-YRNSKSCFOQ0SFDRL.png"
+                    },
+                    "type": "venuePage",
+                    "venue": {
+                        "id": "4decca141f6e3ddebe06c5ef"
+                    },
+                    "tips": {
+                        "count": 0
+                    },
+                    "homeCity": "Brooklyn, NY",
+                    "bio": "",
+                    "contact": {
+                        "twitter": "smithcanteen"
+                    }
+                }
+            }
+        ]
+    },
+    "photos": {
+        "count": 153,
+        "groups": [
+            {
+                "type": "venue",
+                "name": "Venue photos",
+                "count": 153,
+                "items": [
+                    {
+                        "id": "52ed8ef2498ec5fddd239115",
+                        "createdAt": 1391300338,
+                        "prefix": "https://irs1.4sqi.net/img/general/",
+                        "suffix": "/41626544_qPdkpcEC1iK3s8EW_yPb3-3ciCvY3zm7EpgRDes76cs.jpg",
+                        "width": 667,
+                        "height": 1000,
+                        "user": {
+                            "id": "41626544",
+                            "firstName": "Smith Canteen",
+                            "gender": "none",
+                            "photo": {
+                                "prefix": "https://irs2.4sqi.net/img/user/",
+                                "suffix": "/41626544-YRNSKSCFOQ0SFDRL.png"
+                            },
+                            "type": "venuePage",
+                            "venue": {
+                                "id": "4decca141f6e3ddebe06c5ef"
+                            }
+                        },
+                        "visibility": "public"
+                    }
+                ]
+            }
+        ]
+    },
+    "hereNow": {
+        "count": 0,
+        "groups": []
+    },
+    "venuePage": {
+        "id": "41626544"
+    },
+    "storeId": ""
+}
